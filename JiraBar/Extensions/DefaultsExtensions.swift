@@ -28,6 +28,11 @@ extension Defaults.Keys {
     static let refreshRate = Key<Int>("refreshRate", default: 5)
     static let maxResults = Key<String>("maxResults", default: "10")
     
+    /// Keys currently returned by the active JQL query on the last successful refresh.
+    static let knownIssueKeys = Key<[String]>("knownIssueKeys", default: [])
+    /// Newly detected issue keys that still require acknowledgement by the user.
+    static let pendingNewIssueKeys = Key<[String]>("pendingNewIssueKeys", default: [])
+    
     /// Defaults to .cloud so existing users are unaffected.
     static let instanceType = Key<JiraInstanceType>("instanceType", default: .cloud)
     /// Auth method for self-hosted Server. Defaults to .pat (modern default).

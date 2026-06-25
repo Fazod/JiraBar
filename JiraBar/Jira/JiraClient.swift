@@ -137,9 +137,9 @@ public class JiraClient {
 
         AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
             .validate(statusCode: 200..<300)
-            .responseJSON { response in
+            .responseData { response in
                 switch response.result {
-                case .success(_):
+                case .success:
                     sendNotification(body: "Successfully transitioned issue")
                     completion()
                 case .failure(let error):

@@ -26,8 +26,9 @@ public class GithubClient {
                          completion(latestRelease)
                      case .failure(let error):
                          completion(nil)
-                         if let data = response.data {
-                             let json = String(data: data, encoding: String.Encoding.utf8)
+                         if let data = response.data,
+                            let body = String(data: data, encoding: .utf8) {
+                             print(body)
                          }
                          sendNotification(body: error.localizedDescription)
                      }

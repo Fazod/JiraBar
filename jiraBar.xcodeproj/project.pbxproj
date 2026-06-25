@@ -305,10 +305,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = JiraBar/JiraBar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = UV3HUS49VJ;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = JiraBar;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
@@ -337,7 +338,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = UV3HUS49VJ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = JiraBar;
@@ -368,7 +368,7 @@
 				769F4E592775640A00594911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		769F4E5A2775640A00594911 /* Build configuration list for PBXNativeTarget "jiraBar" */ = {
 			isa = XCConfigurationList;
@@ -377,7 +377,7 @@
 				769F4E5C2775640A00594911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 
