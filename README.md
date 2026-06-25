@@ -21,4 +21,29 @@ Native MacOS menubar application to show Jira issues in your menu bar:
 <img width="612" alt="Screen Shot 2022-09-27 at 8 51 13 PM" src="https://user-images.githubusercontent.com/9363150/192662959-5fb0fde2-efe1-4631-a454-f7330315262b.png">
 </p>
 
+# Recent changes
+
+## New issue acknowledgement workflow
+
+- Newly added issues are detected across refreshes and tracked until acknowledged.
+- Unacknowledged issues trigger a native macOS notification.
+- The menu bar item is highlighted when unacknowledged new issues exist.
+- New issues are visually emphasized in the menu.
+- New issue rows include an inline checkbox to acknowledge them.
+- An **Acknowledge all** action is available when multiple new issues are pending.
+
+## Menu ordering
+
+Statuses are ordered in the menu as:
+
+1. Open
+2. Selected for Development
+3. On Hold
+4. Ready for QA
+5. In Review
+
+Additional statuses are shown after those defaults.
+
+Within the **Open** section, new issues are shown first, followed by the newest issue keys.
+
 
